@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.first_div {
+      width: 100vw;          
+      overflow: hidden;     
+      background-color: #c1853b;     
+      font: 500 1.25rem/2rem "Segoe UI", sans-serif;
+      white-space: nowrap;  
+      padding: 5px;
+      
+    }
+
+    .Available {
+      display: inline-block;
+      animation: slide 20s linear infinite;
+      font-size: 15px;
+
+    }
+
+    @keyframes slide {
+    to   { transform: translateX(-100%); } /* move entire width left */
+    }
+
+    /* Heading part */
+
+      /* This is actually the NAvigation part  */
+  header{
+  background-color: #b13630;
+  color: #ffe39b ;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color: #2f0505; /* dark wine */
+  color: #c1853b; /* golden brown */
+  padding: 1rem 0;
+  
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c1853b;
+}
+
+nav {
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #c1853b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover{
+  color: white;
+  transition: width 0.3s ease;
+
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #c1853b;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #2f0505; 
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  border: 5px solid;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  background-color: #85311b; 
+  padding: 2rem;
+  color: #fff;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-img {
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* Services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  background-color: #c1853b; /* golden brown */
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0 10px 8px rgba(2, 0, 0, 0.05);
+}
+
+.service {
+  text-align: center;
+  color: #000000;
+}
+
+.service img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+/* it starting from here the review  */
+.mira-reviews {
+  background-color: #fff7f0;
+  padding: 3rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+/* Container */
+.mira-reviews .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Title */
+.mira-reviews-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Review Grid */
+.mira-review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+/* Review Card */
+.mira-review-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.mira-review-card:hover {
+  transform: translateY(-5px);
+}
+
+.mira-stars {
+  color: #ffb700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.mira-review-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.mira-review-author {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Leave a Review Button */
+.mira-leave-review a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff6f3c;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mira-leave-review a:hover {
+  background-color: #e65a27;
+}
+
+
+/* This is the end of the review  */
+/* Contact & Footer */
+.section {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+  color: #000000;
+}
+
+.Email{
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+strong{
+  color: #ffb700;
+
+}
+
+footer {
+  background-color: #000000; /* black */
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #2f0505;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 200px;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+}
